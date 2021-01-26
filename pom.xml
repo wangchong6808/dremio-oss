@@ -257,8 +257,8 @@
       </properties>
       <repositories>
         <repository>
-          <id>mapr-releases</id>
-          <url>https://repository.mapr.com/maven/</url>
+          <id>localNexus</id>
+          <url>http://127.0.0.1:8081/repository/local/</url>
         </repository>
       </repositories>
       <dependencyManagement>
@@ -293,7 +293,7 @@
       <repositories>
         <repository>
           <id>dremio-free</id>
-          <url>https://maven.dremio.com/free/</url>
+          <url>http://127.0.0.1:8081/repository/local/</url>
         </repository>
       </repositories>
       <dependencyManagement>
@@ -3239,12 +3239,12 @@ limitations under the License.
 
   <repositories>
     <repository>
-      <id>dremio-public</id>
-      <url>https://maven.dremio.com/public/</url>
+      <id>localNexus</id>
+      <url>http://127.0.0.1:8081/repository/local/</url>
     </repository>
-    <repository>
+    <!--<repository>
       <id>redshift</id>
       <url>https://s3.amazonaws.com/redshift-maven-repository/release</url>
-    </repository>
+    </repository>-->
   </repositories>
 </project>
